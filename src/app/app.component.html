@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Inches to CM and CM to Inches Coverter</mat-card-title>
+    <mat-card-subtitle>Using Angular Two way Data Binding</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Inches</mat-label>
+        <input matInput placeholder="Enter Inches" [value]='vInches' (input)='vInches=toDecimal($event.target.value)' />
+
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>CM</mat-label>
+        <input matInput placeholder="Enter CM" [value]='vCM' (input)='vCM=toDecimalCM($event.target.value)' />
+
+      </mat-form-field>
+    </p>
+
+
+
+
+
+
+  </mat-card-content>
+</mat-card>
